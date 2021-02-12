@@ -10,10 +10,22 @@ window.onload = function () {
     console.log(`str.indexOf('T')  ->`, str.indexOf('T'))
     console.log(`str.indexOf('a')  ->`, str.indexOf('a'))
     console.log(`str.lastIndexOf('a')  ->`, str.lastIndexOf('t'))
-    const strings = ['Hello', 'World', '!!!']
+    const strings = ['Hello1', 'World2', '!!!3']
     console.log(strings.sort((a, b) => {
         return a.localeCompare(b)
     }))
-    const a = 5
-    console.log(a.toString())
+    const result = strings.join(' ')
+    // Regex
+    const match = result.match(/\d+/g)
+    console.log(match)
+    const replace = result.replace(/\d+/g, '[Found]')
+    console.log(replace)
+    const index = result.search(/\d+/)
+    console.log(result, index, result[index])
+    // Split Str
+    console.log(`result.slice(0,3) -> `, result.slice(0, 3))
+    console.log(`result.substr(0,3) -> `, result.substr(0, 3))
+    console.log(`result.substring(0,3) -> `, result.substring(0, 3))
+    console.log(result.toLocaleLowerCase())
+    console.log(result.toLowerCase())
 }
