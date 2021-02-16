@@ -18,9 +18,45 @@
         <strong>test2</strong><br>
     </div>
 
-    <form action="">
+    <form action="" class="form" name="form">
         <label>
-            <input name="email" type="text">
+            <input type="file" name="file">
+            <input name="text" type="text">
+            <input name="email" type="email">
+            <textarea name="textarea">
+                adwawdawd
+                awdawd
+                awda
+            </textarea>
+        </label>
+        <label>
+            <input type="checkbox" name="option" value="1"/>
+            Option 1
+            <br>
+        </label>
+        <label>
+            <input type="checkbox" name="option" value="2"/>
+            Option 2
+            <br>
+        </label>
+        <label>
+            <input type="checkbox" checked name="option" value="3"/>
+            Option 3
+            <br>
+        </label>
+        <label>
+            <input type="checkbox" name="option" value="4"/>
+            Option 4
+            <br>
+        </label>
+
+        <label for="st">
+            <select name="select" id="st">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4" selected>4</option>
+            </select>
         </label>
         <button type="submit">OK</button>
     </form>
@@ -38,6 +74,7 @@
 <!--<script src="js/window.js"></script>-->
 <!--<script src="js/e6_syntax.js"></script>-->
 <!--<script src="js/history_screen_location.js"></script>-->
-<script src="js/document1.js"></script>
+<!--<script src="js/document1.js"></script>-->
+<script src="js/form.js"></script>
 </body>
 </html>
