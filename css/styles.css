@@ -1,10 +1,22 @@
-body{
+body {
     flex: 1;
     align-items: center;
-    justify-content:center
+    justify-content: center
 }
-.test{
+
+.test {
     display: none;
-    opacity:0;
+    opacity: 0;
     cursor: pointer;
+}
+
+.drag {
+    width: 150px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: #15ea0e;
 }

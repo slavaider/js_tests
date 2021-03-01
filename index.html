@@ -8,7 +8,7 @@
 <body>
 <div class="container">
     <input type="button" onClick="handler()" value="Click">
-
+    <button class="btn-test">Click</button>
     <div id="time">
         <div><p>abc</p>
         </div>
@@ -20,9 +20,12 @@
 
     <form action="" class="form" name="form">
         <label>
-            <input type="file" name="file">
-            <input name="text" type="text">
-            <input name="email" type="email">
+            <input type="file" name="file"> File
+            <br>
+            <input name="text" type="text"> Text
+            <br>
+            <input name="email" type="email"> Email
+            <br>
             <textarea name="textarea">
                 adwawdawd
                 awdawd
@@ -63,6 +66,9 @@
     <div style="color:black;" class="test">
         <div style="color:black;">Test</div>
     </div>
+    <div class="drag">
+        <button onmousedown="drag(this.parentNode,event)">Drag</button>
+    </div>
 </div>
 <!--<script src="js/vars.js" ></script>-->
 <!--<script src="js/func.js" ></script>-->
@@ -75,6 +81,8 @@
 <!--<script src="js/e6_syntax.js"></script>-->
 <!--<script src="js/history_screen_location.js"></script>-->
 <!--<script src="js/document1.js"></script>-->
-<script src="js/form.js"></script>
+<!--<script src="js/form.js"></script>-->
+<!--<script src="js/events.js"></script>-->
+<script src="js/ajax.js"></script>
 </body>
 </html>
